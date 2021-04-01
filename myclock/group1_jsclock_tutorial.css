@@ -1,0 +1,126 @@
+body {
+    margin: 0px;
+    background-image: url(group1_stars.png);
+}
+
+.liveclock {
+    position: relative;
+    width: 330px;
+    height: 330px;
+    border-radius: 250px;
+    background: white;
+    box-shadow: inset 0 0 100px black;
+    border: 14px solid black;
+    margin-top: 200px;
+    margin-left: 760px;
+}
+
+.liveclock::before, .liveclock::after, .liveclock .marker {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 100%;
+    background: orange;
+    z-index: 0;
+    left: 50%;
+    margin-left: -5px;
+    top: 0;
+}
+
+.liveclock::after {
+    transform: rotate(90deg);
+}
+
+.liveclock .marker {
+    background: blue;
+    width: 8px;
+    margin-left: -4px;
+}
+
+.liveclock .marker.oneseven {
+    transform: rotate(30deg);
+}
+
+.liveclock .marker.twoeight {
+    transform: rotate(60deg);
+}
+
+.liveclock .marker.fourten {
+    transform: rotate(120deg);
+}
+
+.liveclock .marker.fiveeleven {
+    transform: rotate(150deg);
+}
+
+.inner_face {
+    position: relative;
+    width: 88%;
+    height: 88%;
+    background: white;
+    border-radius: 1000px;
+    z-index: 1000;
+    left: 6%;
+    top: 6%;
+}
+
+.inner_face::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    margin-left: -9px;
+    margin-top: -9px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 0 30px gray;
+}
+
+.inner_face::after {
+    content: "ULTICLOCK (placeholder)";
+    position: absolute;
+    width: 100%;
+    font: normal 0.8em Arial;
+    color: gray;
+    text-align: center;
+    top: 85%;
+}
+
+.hand, .hand.hour {
+    position: absolute;
+    width: 4px;
+    height: 30%;
+    top: 20%;
+    left: 50%;
+    margin-left: -2px;
+    background: #46088e;
+    transform: rotate(0deg);
+    transform-origin: bottom;
+    z-index: -1;
+    box-shadow: 0 0 3px gray;
+ }
+
+.hand.minute {
+    height: 45%;
+    top: 5%;
+    width: 6px;
+    margin-left: -3px;
+}
+
+.hand.second {
+    height: 50%;
+    width: 2px;
+    margin-left: -1px;
+    top: 0;
+    background: #ff7a00;
+}
+
+.titletext {
+    font-family: 'Just Another Hand', cursive;
+    color: white;
+    text-shadow: -2px 0px orange;
+    font-size: 50px;
+    margin-left: 300px;
+}

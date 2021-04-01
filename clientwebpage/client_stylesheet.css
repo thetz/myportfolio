@@ -1,0 +1,443 @@
+body{
+	background: grey;
+	font-family: 'Lato', sans-serif;
+}
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.menu {
+  margin: 50px auto;
+  width: 800px;
+  margin-top: 2%;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
+.menu > li {
+  background: #34495e;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+
+.menu a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}
+
+.menu li:hover {
+  background: #e74c3c;
+}
+
+.menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/* Dropdown */
+.submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+
+.submenu li {
+  background-color: #34495e;
+  position: relative;
+  overflow: hidden;
+}
+
+.submenu > li > a {
+  padding: 1em 2em;
+}
+
+.submenu > li::after {
+  content: "";
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.submenu > li:nth-child(odd) {
+  transform: skewX(-25deg) translateX(0);
+}
+
+.submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+
+.submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}
+
+.submenu > li:nth-child(even) {
+  transform: skewX(25deg) translateX(0);
+}
+
+.submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+
+.submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+
+
+.submenu,
+.submenu li {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.submenu li {
+  transition: 0.2s ease transform;
+}
+
+.menu > li:hover .submenu,
+.menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu > li:hover .submenu li:nth-child(even) {
+  transform: skewX(25deg) translateX(15px);
+}
+
+.menu > li:hover .submenu li:nth-child(odd) {
+  transform: skewX(-25deg) translateX(-15px);
+}
+
+
+.carousel-wrapper{
+ 
+  position:relative;
+  width:100%;
+  margin-top: 10%;
+  margin-left: 5px;
+  float: left;
+}
+
+.carousel-item{
+  position:absolute;
+  top:50%;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+
+.arrow{
+  position:absolute;
+  top:40%;
+  display:block;
+  width:50px;
+  height:100%;
+
+  background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-prev{
+  left:0;
+}
+ 
+.arrow-next{
+  right:0;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.light{
+  color:white;
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-0{
+  z-index: 2;
+  opacity: 1;
+ 
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: 1900px 450px;
+}
+.item-1{
+ 
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-size: 1900px 450px;
+}
+
+.item-2{
+  
+   background-size:cover;
+   background-repeat: no-repeat;
+   background-size: 1900px 450px;
+}
+
+*:target ~ .item-0 {
+    opacity: 0;
+}
+
+#item-0:target ~ .item-0 {
+    opacity: 1;
+}
+
+#item-1:target ~ .item-1, #item-2:target ~ .item-2 {
+    z-index: 3;
+    opacity: 1;
+}
+
+
+
+.bottom{
+  border: 0.175em ;
+    border-radius: 8px;
+    height: 50px;
+    width: 100%;
+    margin-top: 55%;
+    color: white;
+    position: relative;
+}
+#about{
+  margin-left: 55%;
+  margin-top: -50%;
+  position: relative;
+}
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600);
+@import url(http://weloveiconfonts.com/api/?family=brandico|entypo);
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+  padding-right: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 100%;
+  background: grey;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#browser {
+  margin-top: 50%;
+  margin: 10px auto;
+  color: white;
+  width: 100%;
+  box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+#browser-bar {
+  background: #394141;
+  width: 100%;
+  padding: 8px;
+  margin-top:10%;
+  font-weight: 300;
+  font-size: 0.9em;
+  position: relative;
+}
+
+
+
+
+
+
+#content {
+  background: #454f4f;
+}
+#content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#content #left {
+  
+  width: 100%;
+  background: #7BC087;
+}
+/* imporant section*/
+
+
+#content #left #map {
+  height: 388px;
+  position: relative;
+  background-image: url("map.jpg");
+  background-size: cover;
+}
+
+
+
+
+
+#content #left #map .map-locator {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  border-radius: 15px;
+  height: 30px;
+  width: 30px;
+  background: rgba(0, 0, 0, 0.4);
+  border: solid 2px white;
+}
+#content #left #map .map-locator:before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 5px;
+}
+#content #left #map .map-locator .tooltip {
+  position: absolute;
+  color: #394141;
+  left: 50px;
+  top: -10px;
+  background: white;
+  font-size: 0.8em;
+  font-weight: 600;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+#content #left #map .map-locator .tooltip li {
+  border-bottom: solid thin #CCC;
+  padding: 10px;
+  white-space: nowrap;
+}
+#content #left #map .map-locator .tooltip li a {
+  color: #51B2D6;
+}
+#content #left #map .map-locator .tooltip li:hover [class*="entypo-"] {
+  color: #51B2D6;
+}
+
+/* <!-- Sources:
+  for dropdown-https://catalin.red/dropdown-menu-concept/
+  for map-https://codepen.io/RobertTheCreator/pen/ERYebe
+  for all product photos-http://www.cg-m.com/
+*/
+
+
+
+

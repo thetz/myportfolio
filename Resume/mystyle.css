@@ -1,0 +1,60 @@
+body {
+	font-family: 'Lato', sans-serif;
+    background-color: lightblue;
+	}
+hr{
+	border-width: 2px;
+	border-color: black;
+	}
+#header {
+	font-family: 'Source Sans Pro', sans-serif;
+	border: 5px black;
+	border-style: double; 
+	height: 350px;
+	width: 1878px;
+	text-align: center;
+	}
+
+#box1 {
+	font-family: 'Droid Sans', sans-serif;
+	border: 4px groove black;
+	box-sizing: border-box;
+	height: 600px;
+	width: 629px;
+	float: left;
+	background-color:#00FFFF;
+	text-align:center;
+	}
+
+#box2 {
+	font-family: 'Droid Sans', sans-serif;
+	border: 4px groove black;
+	box-sizing: border-box;
+	height: 600px;
+	width: 629px;
+	float: right;
+	background-color:#00FFFF;
+	text-align: center;
+	}
+
+#box3 {
+	font-family: 'Droid Sans', sans-serif;
+	border: 4px groove black;
+	box-sizing: border-box;
+	height: 600px;
+	width: 629px;
+	float: right;
+	background-color: #00FFFF;
+	text-align: center;
+	}
+
+#footer {
+	font-family: 'Pangolin', cursive;
+	border: 5px ridge lightblue;
+	height: 50px;
+	width: 1878px;
+	background-color: #F5F5DC;
+	clear: both;
+	}
+
+

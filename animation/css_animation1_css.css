@@ -1,0 +1,186 @@
+body{
+	background-color: black;
+}
+
+#color{
+	width: 25%;
+	height: 250px;
+	margin-top: 100px;
+	background-color: white;
+	position: relative;
+	animation-name: color;
+	animation-direction: normal; 
+	animation-duration: 20s;
+	border-radius:20px 20px 20px 20px;
+	 animation-iteration-count: 2;
+
+}
+
+@keyframes color{
+	2%   {background: black; left: 0px; top: 0px;}
+    25%  {background: red; left: 75%; top: 0px;}
+    50%  {background: pink; left: 75%; top: 500px;}
+    75%  {background: orange; left: 0px; top: 500px;}
+    100% {background: white; left: 0px; top: 0px;}
+
+}
+
+#triangle {
+	width: 25%;
+	height: 250px;
+	background-color: red;
+	border-radius:20px 20px 20px 20px;
+	animation-name: triangle;
+	animation-direction: reverse;
+	animation-duration: 20s;
+	animation-delay: 1.8s;
+	position: relative;
+	animation-iteration-count: 2;
+
+}
+
+#flower{
+	margin-left: -500px;
+}
+
+@keyframes triangle{
+	2%   {background: black; left: 0px; bottom: 0px;}
+    25%  {background: red; left: -75%; bottom: 0px;}
+    50%  {background: pink; left: -75%; bottom: -500px;}
+    75%  {background: orange; left: 0px; bottom: -500px;}
+    100% {background: white; left: 0px; bottom: 0px;}
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

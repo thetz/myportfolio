@@ -1,0 +1,190 @@
+body {
+	background-color: #C79E8C;
+}
+
+div> a{
+	text-decoration: none;
+	color: 	#2E8B57;
+}
+
+h1{
+	font-size: 70px;
+}
+h2{
+	font-size: 50px;
+}
+h3{
+	font-size: 35px;
+}
+h4{
+	font-size: 33px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 40px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+div > a {
+	background-color: yellow;
+}
+
+#header {
+	font-family: 'Pacifico', cursive;
+	height: 200px;
+	width: 1878;
+	size: 20px; 
+	text-align: center;
+	border: 6px;
+	border-style: solid; 
+}
+
+#box1{
+	font-family: 'Indie Flower', cursive;
+	margin-top: 10px;
+	margin-left: 50px;
+	float: left;
+	border: 6px;
+	border-style: solid;
+	text-align: center;
+	height: 175px;
+	width: 800px;
+}
+
+#box2{
+	font-family: 'Indie Flower', cursive;
+	margin-top: 10px;
+	margin-right: 50px;
+	float: right; 
+	border: 6px;
+	border-style: solid;
+	text-align: center;
+	height: 175px;
+	width: 800px;
+}
+
+#moodboard{
+	font-family: 'Indie Flower', cursive;
+	margin-top: 20px;
+	margin-right: 50px;
+	float: left; 
+	border: 6px;
+	border-style: solid;
+	text-align: center;
+	height: 175px;
+	width: 600px;
+}
+
+#box3{
+	font-family: 'Indie Flower', cursive;
+	margin-top: 10px;
+	margin-left:469.5px;
+	float: left; 
+	border: 6px;
+	border-style: solid;
+	text-align: center;
+	height: 150px;
+	width: 936px;
+}
+
+
+
+#box5{
+	font-family: 'Playfair Display', serif;
+	margin-top: 70px;
+	margin-left: 70px;
+	float: left;
+	border: 6px solid black;
+	border-radius: 20px;
+	height: 120px;
+	width: 700px;
+	text-align: center;
+}
+
+#source{
+	font-family: 'Playfair Display', serif;
+	margin-top: 70px;
+	margin-left: 80px;
+	float: left;
+	border: 6px solid black;
+	border-radius: 20px;
+	height: 120px;
+	width: 180px;
+	text-align: center;
+
+}
+
+#box6{
+	font-family: 'Playfair Display', serif;
+	margin-top: 70px;
+	float: right;
+	margin-right: 70px;
+	border: 6px solid black;
+	border-radius: 20px;
+	width: 700px;
+	height: 120px;
+	text-align: center;
+
+}
+
+#box7{
+	font-family: 'Dosis', sans-serif;
+	margin-top: 70px;
+	border: 6px;
+	border-style:dashed;
+	float: left;
+	margin-left: 150px;
+	margin-right: 150px;
+	text-align: center;
+	width: 1570px;
+	height:100px;
+
+
+}
+
+#moodboard{
+	font-family: 'Indie Flower', cursive;
+	margin-top: 20px;
+	margin-left: 650px;
+	float: left; 
+	border: 6px;
+	border-style: solid;
+	text-align: center;
+	height: 175px;
+	width: 600px;
+}
+
+#DOP{
+	float: left;
+	border-radius: 13px;
+	
+}
+
+	
+	
+
+
+
